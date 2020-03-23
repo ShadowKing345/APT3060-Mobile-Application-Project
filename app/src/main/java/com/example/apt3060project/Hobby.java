@@ -22,13 +22,13 @@ public class Hobby {
     @ColumnInfo(name = "shouldRepeat")
     private boolean shouldRepeat;
     @ColumnInfo(name = "duration")
-    private int duration;
+    private String duration;
     @ColumnInfo(name = "timeSpent")
     private int timeSpent;
     @ColumnInfo(name = "historyReference")
     private String historyReference;
 
-    public Hobby(int id, String name, String details, String time, String dates, boolean shouldRepeat, int duration) {
+    public Hobby(int id, String name, String details, String time, String dates, boolean shouldRepeat, String duration) {
         this.id = id;
         this.name = name;
         this.details = details;
@@ -88,11 +88,11 @@ public class Hobby {
         this.shouldRepeat = shouldRepeat;
     }
 
-    public int getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 

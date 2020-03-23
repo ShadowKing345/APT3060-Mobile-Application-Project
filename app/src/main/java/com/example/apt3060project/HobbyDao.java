@@ -1,5 +1,7 @@
 package com.example.apt3060project;
 
+import android.database.Cursor;
+
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -21,6 +23,10 @@ public abstract class HobbyDao{
     public abstract List<Hobby> getHobbies();
     @Query("Select * from hobbies where hobbies._id = :id")
     public abstract List<Hobby> getHobbiesById(int id);
-    @Query("Select * from hobbies where hobbies.time = :date")
+    @Query("Select * from hobbies where hobbies.dates = :date")
     public abstract List<Hobby> getHobbiesByDate(String date);
+    @Query("select * from hobbies where hobbies.dates = :date")
+    public abstract Cursor getHobbiesByDateCursor(String date);
+    @Query("select * from hobbies")
+    public abstract Cursor getHobbiesCursor();
 }

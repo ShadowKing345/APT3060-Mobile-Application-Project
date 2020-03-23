@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">APT3060 Project</string>
+    <string name="Date_Today_Value">Today</string>
+    <string name="Date_Calendar_Value">Calendar</string>
+    <string name="add_hobby_title">Add Hobby</string>
+    <string name="SaveButtonValue">Save</string>
+    <string name="add_hobby_days_mon_label_value">Mon</string>
+    <string name="add_hobby_days_tue_label_value">Tue</string>
+    <string name="add_hobby_days_wed_label_value">Wed</string>
+    <string name="add_hobby_days_thr_label_value">Thr</string>
+    <string name="add_hobby_days_fri_label_value">Fri</string>
+    <string name="add_hobby_days_sat_label_value">Sat</string>
+    <string name="add_hobby_days_sun_label_value">Sun</string>
+    <string name="name">Name:</string>
+    <string name="hobby_name">Hobby Name</string>
+    <string name="description">Description:</string>
+    <string name="a_indepth_description_of_the_hobby">A indepth description of the Hobby.</string>
+    <string name="time">Time:</string>
+    <string name="days">Days</string>
+    <string name="repeat">Repeat?</string>
+    <string name="duration">Duration:</string>
+    <string name="date_hobby_list_item_duration_label">Duration:</string>
+    <string name="date_hobby_list_item_time_label">Time:</string>
 </resources>

@@ -26,20 +26,44 @@
             android:id="@+id/dayHobbyLITime"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:gravity="center_vertical"
             android:textSize="10sp"
             app:layout_constraintBottom_toTopOf="@+id/dayHobbyLIDuration"
             app:layout_constraintEnd_toStartOf="@+id/dayHobbyLIButton"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/textView19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/date_hobby_list_item_duration_label"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dayHobbyLIName"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:text="@string/date_hobby_list_item_time_label"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintStart_toEndOf="@+id/dayHobbyLIName"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/dayHobbyLIDuration"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:gravity="center_vertical"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/dayHobbyLIButton"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
             app:layout_constraintTop_toBottomOf="@+id/dayHobbyLITime"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -47,6 +71,7 @@
             android:id="@+id/dayHobbyLIButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:background="@drawable/ic_more_vert_black_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/dayHobbyLITime"
