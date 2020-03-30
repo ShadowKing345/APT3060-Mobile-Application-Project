@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yes_no_dialog_box_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade_1">
+
+    <TextView
+        android:id="@+id/yes_no_dialog_box_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yes_no_dialog_box_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:lines="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yes_no_dialog_box_title" />
+
+    <Button
+        android:id="@+id/yes_no_dialog_box_yes"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@color/shade_5"
+        android:text="@string/yes"
+        app:layout_constraintEnd_toStartOf="@+id/yes_no_dialog_box_no"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yes_no_dialog_box_message" />
+
+    <Button
+        android:id="@+id/yes_no_dialog_box_no"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@color/shade_5"
+        android:text="@string/no"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yes_no_dialog_box_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yes_no_dialog_box_yes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

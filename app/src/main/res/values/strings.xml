@@ -1,24 +1,55 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">APT3060 Project</string>
-    <string name="Date_Today_Value">Today</string>
-    <string name="Date_Calendar_Value">Calendar</string>
-    <string name="add_hobby_title">Add Hobby</string>
-    <string name="SaveButtonValue">Save</string>
-    <string name="add_hobby_days_mon_label_value">Mon</string>
-    <string name="add_hobby_days_tue_label_value">Tue</string>
-    <string name="add_hobby_days_wed_label_value">Wed</string>
-    <string name="add_hobby_days_thr_label_value">Thr</string>
-    <string name="add_hobby_days_fri_label_value">Fri</string>
-    <string name="add_hobby_days_sat_label_value">Sat</string>
-    <string name="add_hobby_days_sun_label_value">Sun</string>
-    <string name="name">Name:</string>
-    <string name="hobby_name">Hobby Name</string>
-    <string name="description">Description:</string>
-    <string name="a_indepth_description_of_the_hobby">A indepth description of the Hobby.</string>
-    <string name="time">Time:</string>
-    <string name="days">Days</string>
-    <string name="repeat">Repeat?</string>
-    <string name="duration">Duration:</string>
-    <string name="date_hobby_list_item_duration_label">Duration:</string>
-    <string name="date_hobby_list_item_time_label">Time:</string>
+
+    <string name="add_hobby_activity_title">Add Hobby</string>
+    <string name="edit_hobby_activity_title">Edit Hobby</string>
+    <string name="detailed_hobby_activity_title">Detailed Hobby</string>
+    <string name="report_activity_title">Report</string>
+
+    <string name="edit_hobby_name_label">Name:</string>
+    <string name="edit_hobby_name_hint">Example Hobby</string>
+    <string name="edit_hobby_description_label">Description:</string>
+    <string name="edit_hobby_description_hint">This is an example description for an example hobby.</string>
+
+    <string name="detailed_view_description_label">Description:</string>
+    <string name="detailed_view_edit">Edit</string>
+    <string name="detailed_view_report">Report</string>
+    <string name="detailed_view_delete">Delete</string>
+    <string name="detailed_view_add">Add Time</string>
+
+    <string name="report_name">Name:</string>
+    <string name="report_total_time">Accumulated Time:</string>
+    <string name="report_hobby_history_date">Date Stamp:</string>
+    <string name="report_hobby_history_duration">Duration (Minutes) :</string>
+
+    <string name="add_time_title">How much time and what date did you spend?</string>
+    <string name="add_time_hour">Hour:</string>
+    <string name="add_time_minutes">Minutes:</string>
+
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="cancel" tools:ignore="ButtonCase">cancel</string>
+    <string name="okay">okay</string>
+    <string name="add">add</string>
+    <string name="save">save</string>
+    <string name="information">information</string>
+    <string name="warning">warning</string>
+    <string name="error">error</string>
+    <string name="delete">delete?</string>
+
+    <string name="delete_hobby_message">Are you sure you want to delete this hobby?</string>
+    <string name="delete_hobby_history_message">Are you sure you want to delete this date stamp?</string>
+
+    <string name="edit_hobby_save_changes">Do you want to save the changes to this date stamp?</string>
+
+    <string name="add_hobby_history">What date and how much time did you spend?</string>
+    <string name="change_hobby_history">What date and how much time did you spend?</string>
+
+    <string name="verification_name">Hi. Please be aware that you cannot leave the name filed blank.
+    Regards, The verification method.</string>
+    <string name="verification_description">Hi. Please be aware that you cannot leave the description filed blank.
+    Regards, The verification method.</string>
+    <string name="null_point_error">No idea how. No idea why. But somehow you managed to look for an id that does should not exist. So, to save you from this unexpected error you will be sent back.</string>
+
+    <string name="image_description">There is no actually description here. but is it cute that you think there is.</string>
 </resources>

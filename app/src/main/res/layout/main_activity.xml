@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DateActivity">
+    android:background="@color/shade_2"
+    tools:context=".activities.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/DateContentLayout"
@@ -19,6 +20,7 @@
             android:id="@+id/constraintLayout5"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -30,6 +32,8 @@
                 android:id="@+id/DateLayoutDateTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/shade_3"
+                android:padding="5dp"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -38,6 +42,8 @@
                 android:id="@+id/DateLayoutTimeTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/shade_3"
+                android:padding="5dp"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -54,7 +60,7 @@
             app:layout_constraintVertical_weight="2">
 
             <ListView
-                android:id="@+id/DateHobbiesList"
+                android:id="@+id/main_activity_hobbies_list"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"
@@ -63,6 +69,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
+                android:background="@color/shade_1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -75,43 +82,27 @@
         android:id="@+id/DateControlsLayout"
         android:layout_width="0dp"
         android:layout_height="80dp"
+        android:background="@drawable/main_activity_nav_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/DateTodayButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/Date_Today_Value"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/DateAddHobbyButton"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
+        <ImageButton
             android:id="@+id/DateAddHobbyButton"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:background="@drawable/round_background_red"
             android:onClick="onAddButtonClick"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/DateCalendarButton"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/DateTodayButton"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/DateCalendarButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/Date_Calendar_Value"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_white_24dp"
+            android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/DateAddHobbyButton"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_description" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

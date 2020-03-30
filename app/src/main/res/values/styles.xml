@@ -1,11 +1,37 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/shade_5</item>
+        <item name="colorPrimaryDark">@color/shade_5</item>
+        <item name="colorAccent">@color/shade_1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/shade_1</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
     </style>
 
+    <style name="CalendarViewSelectedDate" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/shade_4</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="CalendarViewDateText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:weekNumberColor">@color/shade_4</item>
+    </style>
+
+    <style name="CalenderViewWeekText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NumberPickerTextColor" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="Theme.AppCompat">
+        <item name="android:popupBackground">@color/black</item>
+    </style>
 </resources>

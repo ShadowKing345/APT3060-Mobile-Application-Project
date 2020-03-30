@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:icon="@drawable/ic_add_white_24dp"
+            android:onClick="onAddDateStampButtonClicked"
+            android:title="@string/detailed_view_add"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:icon="@drawable/ic_edit_white_24dp"
+            android:onClick="onEditButtonClicked"
+            android:title="@string/detailed_view_edit" />
+        <item
+            android:icon="@drawable/ic_edit_white_24dp"
+            android:onClick="onReportButtonClicked"
+            android:title="@string/detailed_view_report" />
+
+    </group>
+    <group>
+        <item
+            android:icon="@drawable/ic_edit_white_24dp"
+            android:onClick="onDeleteButtonClicked"
+            android:title="@string/detailed_view_delete" />
+    </group>
+</menu>
